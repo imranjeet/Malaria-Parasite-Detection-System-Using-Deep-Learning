@@ -1,0 +1,120 @@
+<!-- Extends the layout.html in this file-->
+{% extends 'layout.html'%}
+
+<!-- {block} Adds this code to layout body-->
+{% block body %}
+
+<div class="jumbotron text-center" style="height: 600px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; background-color: #FFFFFF; padding: 20px; font-family: 'Arial', sans-serif;">
+  <div style="max-width: 1200px;">
+    <h1 style="color: #000C57; font-size: 3.3rem; margin-bottom: 15px; font-weight: 600;">
+      Malaria Parasite Detection System Using Deep Learning<br>
+    </h1>
+    <p style="color: #000C57; font-size: 1.5rem; margin-bottom: 15px; font-weight: 400;">Revolutionize Malaria Classification with Deep Learning <br> - Get Accurate Results in Seconds! </p>
+    
+    <div style="background-color: #e9ecef; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+      <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 10px; text-align: center;">
+        This system implements a convolutional neural network (CNN) 
+        to automatically detect malaria parasites in thin blood smear images.
+      </p>
+    </div>
+    
+    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+      <div style="text-align: left; max-width: 450px;">
+        <h3 style="color: #000C57; font-size: 2rem; border-bottom: 2px solid #000C57; padding-bottom: 5px;">Key Features</h3>
+        <ul style="text-align: left; font-size: 1.6rem; line-height: 1.7; padding-left: 20px;">
+          <li>Custom CNN architecture optimized for parasite detection</li>
+          <li>Web interface for easy image upload and analysis</li>
+          <li>Comparative analysis with traditional methods</li>
+          <li>Detailed performance metrics (precision, recall, F1-score)</li>
+        </ul>
+      </div>
+      
+      <div style="text-align: left; max-width: 450px;">
+        <h3 style="color: #000C57; font-size: 2rem; border-bottom: 2px solid #000C57; padding-bottom: 5px;">Technical Specifications</h3>
+        <ul style="text-align: left; font-size: 1.6rem; line-height: 1.7; padding-left: 20px;">
+          <li>Built with Python, TensorFlow/Keras</li>
+          <li>Flask web framework for backend</li>
+          <li>HTML/CSS/JavaScript frontend</li>
+          <li>Trained on 27,558 cell images</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 18px; margin-bottom: 20px; text-align: center;">
+    <img src="../static/img/home_image.jpg" style="width: 900px; height: auto; max-height: 500px; object-fit: contain;"/>
+    <p style="margin-top: 18px; margin-bottom: 30px; font-size: 0.9rem; color: #555;">
+      System workflow from blood smear image to classification result
+    </p>
+  </div>
+</div>
+  
+<!-- //create login form   -->
+  
+  <!-- <div class="container">  
+
+    <div class='content-container'>
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="panel panel-default card">
+            <img src="/static/img/11.gif" alt="">
+            <div class="panel-body">
+              <h3 class='card-title'>Upload Image</h3>
+              <p class='card-text'>Physicians can upload an Malaria infected  image in the system. Inorder to classify which disease it is.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="panel panel-default card">
+            <img src="/static/img/22.gif" alt="">
+            <div class="panel-body">
+              <h3 class='card-title'>Classification</h3>
+              <p class='card-text'>After the image is uploaded the physician can press the button to predict or classify the Malaria.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="panel panel-default card">
+            <img src="/static/img/333.gif" alt="">
+            <div class="panel-body">
+              <h3 class='card-title'>Get Result</h3>
+              <p class='card-text'>After system displays it’s prediction the physician can generate the classification report in PDF format.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div> -->
+
+  <!-- <section id='about' class='about bg-primary my-4 py-2'>
+      <div class="container">
+        <div class="content-container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12 text-left p-2">
+              <h2 class='xl'>About</h2>
+              <p class='lead'>The services that will be provided to the physicians will be</p>
+              <ul class='lead fa-ul'>
+                   <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Classification of Malaria.</li>
+                 <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Managing patients by adding and generating patient’s records.</li>
+                 <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Sharing those records with patients.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</section> -->
+
+{% endblock %}

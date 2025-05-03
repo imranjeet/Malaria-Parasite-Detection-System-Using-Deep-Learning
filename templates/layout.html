@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Malaria Detection System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-wrap {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+      {% include 'includes/_navbar.html' %}
+
+    <main class="container">
+      {% include 'includes/_messages.html' %}
+      {% block body %}{% endblock %}
+    </main>
+
+    <div style="height: 400px;"></div>
+
+    </div>
+    
+  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Malaria Detection</p>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a3c583410d.js" crossorigin="anonymous"></script>
+</body>
+</html>
