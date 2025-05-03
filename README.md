@@ -43,6 +43,7 @@ Ensure the following tools are installed before setting up the project:
 - [Python 3.x](https://www.python.org/)
 - [XAMPP (for MySQL)](https://www.apachefriends.org/index.html)
 - `mysql-connector-python` (install via pip)
+- The dataset used in this model was obtained from the [Malaria Cell Images Dataset](https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria) on Kaggle.
 
 ---
 
